@@ -1,0 +1,12 @@
+.addButton {
+    padding: 20px;
+}
+
+.addButton>button {
+    background-color: darksalmon;
+    font-size: 70px;
+    padding: 20px;
+    border: none;
+    border-radius: 36px;
+    height: 30vh;
+}
