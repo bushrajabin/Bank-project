@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AddForm.css";
-function AddForm({ onShowAddForm }) {
+function AddForm({ onShowAddForm,onShowData }) {
   const [IFSCCode, setIFSCCode] = useState("");
   const [holderName, setHolderName] = useState("");
   const [accountNo, setIAccountNo] = useState("");
@@ -25,6 +25,7 @@ function AddForm({ onShowAddForm }) {
       datas.push(data)
       localStorage.setItem("datas",JSON.stringify(datas))
       onShowAddForm(false)
+      onShowData(true)
     }
   };
 
@@ -32,6 +33,7 @@ function AddForm({ onShowAddForm }) {
   const close=()=>{
     onShowAddForm(false)
   }
+
 
   return (
     <div className="container">

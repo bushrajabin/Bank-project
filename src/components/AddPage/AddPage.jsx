@@ -13,9 +13,6 @@ function AddPage({ onShowAddForm }) {
         <button onClick={showForm}>+</button>
       </div>
 
-      <div>
-        
-      </div>
     </div>
   );
 }
