@@ -3,14 +3,21 @@
     padding: 10px;
 }
 
-.card-list{
-    background-color: orangered;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.card-list {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
-    border-radius: 20px;
-    /* margin-left: 40px; */
-    margin: 10px;
     color: white;
+
+}
+
+
+.div-main {
+    background-color: orangered;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 10px;
+
 }

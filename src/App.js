@@ -17,12 +17,14 @@ function App() {
   return (
     <React.Fragment>
       <AddPage onShowAddForm={toggleAddFormVisibility} />
+
       {isAddFormVisible && (
         <AddForm
           onShowAddForm={toggleAddFormVisibility}
           onShowData={toggleDataShow}
         />
       )}
+
       {viewPage && <ShowData onShowData={toggleDataShow} />}
     </React.Fragment>
   );
