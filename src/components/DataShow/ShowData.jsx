@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./ShowData.css";
 
 function ShowData() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const storedData = JSON.parse(localStorage.getItem("datas"));
+    if (storedData) {
+      setData(storedData);
+    }
+  }, []);
+
   return (
     <div>
       <div className="cards">
-        <h3 className="card">cards</h3>
+        <h3 className="card">Cards</h3>
         <div className="card-list">
-          <h2>
-            Balance:<br></br>
-            $4000
-          </h2>
-          <br></br>
-          <h2>bank name:</h2>
-          <br></br>
-          <h2>ac-No</h2>
+          {data.map((data, index, arr) => {
+            const { IFSCCode, holderName, accountNo, bankName } = data;//In This line destructuring the data
+            return (
+              <div>
+                <h2>IFSC Code: {IFSCCode}</h2>
+                <h2>Holder Name: {holderName}</h2>
+                <h2>Account Number: {accountNo}</h2>
+                <h2>Bank Name: {bankName}</h2>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
