@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,7 +7,6 @@
 
 .heading {
     padding-left: 20px;
-    /* padding-top: 10px; */
 }
 
 .container {
@@ -30,7 +29,6 @@
     display: flex;
     flex-direction: column;
     margin: 3px;
-    /* padding: 2px; */
 }
 
 label {
@@ -91,10 +89,9 @@ input {
         justify-content: center;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;  */
-        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;       padding: 10px; */
     }
     .close{
         background-color: transparent;
     }
-}
+} 
+
