@@ -22,10 +22,12 @@ function ShowData() {
             
              <input type="radio" />
               <div className="dataShow">
-                <h2>IFSC Code: {IFSCCode}</h2><br />
-                <h2>Holder Name: {holderName}</h2><br></br>
-                <h2>Account Number: {accountNo}</h2><br></br>
-                <h2>Bank Name: {bankName}</h2>
+                <h2>IFSC Code:<br></br> {IFSCCode}</h2><br />
+                <img src="./image.png" alt="" />
+                {/* <h2>Holder Name: {holderName}</h2><br></br> */}
+              
+                <h2> {bankName}</h2>
+                <h2> {accountNo}</h2><br></br>
               </div>
               </div>
               </>
