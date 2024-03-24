@@ -1,35 +1,36 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    background-color: white;
 }
 
 .heading {
     padding-left: 20px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    width: 30vw;
+    width: 25vw;
     margin: auto;
-    /* position:absolute; */
-    top: 9px;
     background-color: white;
     justify-content: center;
-    
-    
+    position: relative;
+    bottom: 140px;
+    padding: 3px;
+
+   
 }
 
 .input-form {
     display: flex;
     flex-direction: column;
     margin: 3px;
-    padding: 2px;
+    /* padding: 2px; */
 }
 
 label {
@@ -41,7 +42,7 @@ label {
 }
 
 input {
-   background-color:  rgba(240, 235, 186, 0.15);
+    background-color: rgba(240, 235, 186, 0.15);
     padding: 16px;
     outline: none;
     border-radius: 8px;
@@ -62,26 +63,38 @@ input {
     justify-content: center;
     border-radius: 20px;
     margin: auto;
-    font-size: 20px;
     color: white;
     letter-spacing: 1px;
     cursor: pointer;
 }
-.button1:hover{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+
+.button1:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
 .close {
     border: none;
     padding: 10px;
-    background-color: white;
-    font-size: 17px;
+    background-color: transparent;
     cursor: pointer;
 }
 
 
 @media (max-width:500px) {
-    .container{
-        width: 90vw;
+    .container {
+        width: auto;
         background-color: white;
+        padding-top: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;  */
+        /* box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;       padding: 10px; */
+    }
+    .close{
+        background-color: transparent;
     }
 }

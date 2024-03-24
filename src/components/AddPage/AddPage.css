@@ -1,10 +1,15 @@
 .main-Div {
-    width: 40vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
     margin: auto;
+    gap: 5px;
+    margin-top: 0px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+
 }
 
 .mycard {
@@ -12,7 +17,7 @@
     font-size: 13px;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 20px;
-    padding-top: 40px;
+    padding-top: 10px;
     letter-spacing: 2px;
 }
 
@@ -39,7 +44,11 @@
 @media (max-width:500px) {
     .main-Div {
         width: auto;
-        padding-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
     }
+
 
 }
