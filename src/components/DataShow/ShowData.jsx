@@ -17,9 +17,9 @@ function ShowData() {
             const { IFSCCode, holderName, accountNo, bankName } = detail; //In This line destructuring the data
             return (
               <div className="div-main">
-                <h2>IFSC Code: {IFSCCode}</h2>
-                <h2>Holder Name: {holderName}</h2>
-                <h2>Account Number: {accountNo}</h2>
+                <h2>IFSC Code: {IFSCCode}</h2><br />
+                <h2>Holder Name: {holderName}</h2><br></br>
+                <h2>Account Number: {accountNo}</h2><br></br>
                 <h2>Bank Name: {bankName}</h2>
               </div>
             );

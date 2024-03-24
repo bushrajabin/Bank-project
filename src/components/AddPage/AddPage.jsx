@@ -1,18 +1,17 @@
 import React from "react";
 import "./AddPage.css";
-function AddPage({ onShowAddForm }) {
+function AddPage({ setIsAddFormVisible }) {
   const showForm = () => {
-    onShowAddForm(true);
+    setIsAddFormVisible(true)
   };
   return (
-    <div>
+    <div className="main-Div">
       <div className="mycard">
         <h1>My Card</h1>
       </div>
       <div className="addButton">
         <button onClick={showForm}>+</button>
       </div>
-
     </div>
   );
 }

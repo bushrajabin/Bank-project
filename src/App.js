@@ -7,25 +7,18 @@ function App() {
   const [isAddFormVisible, setIsAddFormVisible] = useState(false);
   const [viewPage, setViewPage] = useState(false);
 
-  const toggleAddFormVisibility = () => {
-    setIsAddFormVisible(!isAddFormVisible);
-  };
-
-  const toggleDataShow = () => {
-    setViewPage(!viewPage);
-  };
   return (
     <React.Fragment>
-      <AddPage onShowAddForm={toggleAddFormVisibility} />
+      <AddPage setIsAddFormVisible={setIsAddFormVisible} />
 
       {isAddFormVisible && (
         <AddForm
-          onShowAddForm={toggleAddFormVisibility}
-          onShowData={toggleDataShow}
+          setIsAddFormVisible={setIsAddFormVisible}
+          setViewPage={setViewPage}
         />
       )}
 
-      {viewPage && <ShowData onShowData={toggleDataShow} />}
+      {viewPage && <ShowData setViewPage={setViewPage} />}
     </React.Fragment>
   );
 }
